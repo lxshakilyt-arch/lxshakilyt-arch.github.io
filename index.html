@@ -3,92 +3,444 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My All APK And File</title>
+<title>LX SHAKIL YT OFFICIAL WEBSITE</title>
 
 <style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: white;
-  color: #111;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,Helvetica,sans-serif;
 }
 
-h1 {
-  text-align: center;
-  font-size: 38px;
-  margin: 70px 10px 10px;
+html{
+  scroll-behavior:smooth;
 }
 
-.subtitle {
-  text-align: center;
-  color: #777;
-  font-size: 25px;
-  margin-bottom: 55px;
+body{
+  min-height:100vh;
+  color:#fff;
+  background:
+    radial-gradient(circle at 10% 0%,rgba(0,229,255,.16),transparent 30%),
+    radial-gradient(circle at 90% 5%,rgba(255,0,200,.14),transparent 30%),
+    linear-gradient(135deg,#05050a,#0c0c18 50%,#050509);
+  overflow-x:hidden;
 }
 
-.file {
-  background: #f5f5f5;
-  margin: 25px;
-  padding: 25px;
-  border-radius: 25px;
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  background:
+    linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);
+  background-size:35px 35px;
 }
 
-.name {
-  font-size: 34px;
-  font-weight: bold;
-  margin-bottom: 25px;
+.container{
+  width:92%;
+  max-width:1050px;
+  margin:auto;
+  padding:32px 0 25px;
+  position:relative;
+  z-index:2;
 }
 
-a {
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  color: white;
-  font-size: 27px;
-  font-weight: bold;
-  padding: 20px;
-  border-radius: 15px;
-  margin-top: 15px;
+.hero{
+  text-align:center;
+  padding:5px 0 30px;
 }
 
-.telegram {
-  background: #229ED9;
+.logo-wrap{
+  width:155px;
+  height:155px;
+  margin:0 auto 22px;
+  padding:4px;
+  border-radius:50%;
+  background:linear-gradient(135deg,#00e5ff,#7145ff,#ff00c8);
+  box-shadow:
+    0 0 25px rgba(0,229,255,.45),
+    0 0 55px rgba(255,0,200,.22);
+  animation:glow 3s infinite alternate;
 }
 
-.whatsapp {
-  background: #25D366;
+.logo{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  border-radius:50%;
+  background:#111;
+}
+
+@keyframes glow{
+  from{
+    box-shadow:
+      0 0 20px rgba(0,229,255,.35),
+      0 0 35px rgba(255,0,200,.15);
+  }
+  to{
+    box-shadow:
+      0 0 35px rgba(0,229,255,.55),
+      0 0 65px rgba(255,0,200,.3);
+  }
+}
+
+h1{
+  font-size:clamp(25px,6vw,48px);
+  font-weight:900;
+  line-height:1.2;
+  letter-spacing:1px;
+  background:linear-gradient(90deg,#00e5ff,#fff,#ff8be9);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
+}
+
+.badge{
+  display:inline-flex;
+  align-items:center;
+  margin-top:14px;
+  padding:8px 17px;
+  border-radius:30px;
+  border:1px solid rgba(0,229,255,.45);
+  background:rgba(0,229,255,.07);
+  color:#68eaff;
+  font-size:14px;
+  font-weight:bold;
+  box-shadow:0 0 20px rgba(0,229,255,.12);
+}
+
+.tagline{
+  margin-top:13px;
+  color:#aaa;
+  font-size:15px;
+  letter-spacing:3px;
+}
+
+.notice{
+  max-width:900px;
+  margin:0 auto 32px;
+  padding:20px;
+  text-align:center;
+  line-height:1.8;
+  color:#ddd;
+  font-size:15px;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:20px;
+  background:rgba(255,255,255,.055);
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+  box-shadow:0 15px 45px rgba(0,0,0,.3);
+}
+
+.section-title{
+  text-align:center;
+  margin:5px 0 22px;
+  font-size:27px;
+  font-weight:900;
+}
+
+.section-title .blue{
+  color:#00e5ff;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+}
+
+.card{
+  position:relative;
+  overflow:hidden;
+  padding:23px;
+  border-radius:23px;
+  border:1px solid rgba(255,255,255,.11);
+  background:rgba(255,255,255,.055);
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+  box-shadow:0 15px 45px rgba(0,0,0,.35);
+  transition:.3s ease;
+}
+
+.card::before{
+  content:"";
+  position:absolute;
+  width:150px;
+  height:150px;
+  right:-70px;
+  top:-70px;
+  border-radius:50%;
+  background:#00e5ff;
+  filter:blur(75px);
+  opacity:.08;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  border-color:rgba(0,229,255,.35);
+  box-shadow:
+    0 20px 55px rgba(0,0,0,.45),
+    0 0 25px rgba(0,229,255,.08);
+}
+
+.file-icon{
+  width:52px;
+  height:52px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:15px;
+  margin-bottom:17px;
+  font-size:25px;
+  background:linear-gradient(135deg,#00d9ff,#6246ff);
+  box-shadow:0 8px 25px rgba(0,180,255,.2);
+}
+
+.card h2{
+  font-size:20px;
+  margin-bottom:8px;
+}
+
+.card p{
+  color:#999;
+  font-size:14px;
+  margin-bottom:20px;
+}
+
+.buttons{
+  display:flex;
+  gap:10px;
+}
+
+.btn{
+  flex:1;
+  padding:13px 8px;
+  border-radius:13px;
+  text-align:center;
+  text-decoration:none;
+  color:white;
+  font-size:14px;
+  font-weight:800;
+  transition:.25s;
+}
+
+.btn:hover{
+  transform:scale(1.03);
+  filter:brightness(1.1);
+}
+
+.telegram{
+  background:linear-gradient(135deg,#168fe8,#0066ff);
+  box-shadow:0 8px 20px rgba(0,115,255,.22);
+}
+
+.whatsapp{
+  background:linear-gradient(135deg,#18c86c,#079447);
+  box-shadow:0 8px 20px rgba(0,200,100,.2);
+}
+
+footer{
+  text-align:center;
+  padding:35px 0 10px;
+  color:#666;
+  font-size:12px;
+}
+
+@media(max-width:650px){
+
+  .container{
+    width:94%;
+    padding-top:25px;
+  }
+
+  .logo-wrap{
+    width:145px;
+    height:145px;
+  }
+
+  .grid{
+    grid-template-columns:1fr;
+  }
+
+  .card{
+    padding:20px;
+  }
+
+  .buttons{
+    gap:9px;
+  }
+
+  .notice{
+    font-size:14px;
+    padding:18px;
+  }
 }
 </style>
 </head>
 
 <body>
 
-<h1>↓ My All APK And File ↓</h1>
-<div class="subtitle">Choose your file</div>
+<div class="container">
 
-<div class="file">
-  <div class="name">FF SENSI PRO</div>
-  <a class="telegram" href="https://t.me/+0XtG3hTk1QNlZGZl" target="_blank">Telegram</a>
-  <a class="whatsapp" href="https://whatsapp.com/channel/0029Vb8p5blDZ4LYWfPETv3G" target="_blank">WhatsApp</a>
+<header class="hero">
+
+<div class="logo-wrap">
+<img
+class="logo"
+alt="LX SHAKIL YT"
+src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////2wBDAf//////////////////////////////////////////////////////////////////////////////////////wAARCAFAAUADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAH/AP/EABQQAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQEAAQUCf//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABQQAQAAAAAAAAAAAAAAAAAAABD/2gAIAQEABj8Cf//Z"
+>
 </div>
 
-<div class="file">
-  <div class="name">Free Fire OBB</div>
-  <a class="telegram" href="https://t.me/+0XtG3hTk1QNlZGZl" target="_blank">Telegram</a>
-  <a class="whatsapp" href="https://whatsapp.com/channel/0029Vb8p5blDZ4LYWfPETv3G" target="_blank">WhatsApp</a>
+<h1>LX SHAKIL YT OFFICIAL WEBSITE</h1>
+
+<div class="badge">
+✓ Official Website
 </div>
 
-<div class="file">
-  <div class="name">FF King Panel</div>
-  <a class="telegram" href="https://t.me/+0XtG3hTk1QNlZGZl" target="_blank">Telegram</a>
-  <a class="whatsapp" href="https://whatsapp.com/channel/0029Vb8p5blDZ4LYWfPETv3G" target="_blank">WhatsApp</a>
+<div class="tagline">
+Apps • Files • Updates
 </div>
 
-<div class="file">
-  <div class="name">VIP Game Booster</div>
-  <a class="telegram" href="https://t.me/+0XtG3hTk1QNlZGZl" target="_blank">Telegram</a>
-  <a class="whatsapp" href="https://whatsapp.com/channel/0029Vb8p5blDZ4LYWfPETv3G" target="_blank">WhatsApp</a>
+</header>
+
+<div class="notice">
+যে কোনো প্রয়োজনীয় App/File-এর নামের উপর ট্যাপ করুন।
+<br>
+তারপর Telegram অথবা WhatsApp-এ Join করে ফাইলটি সংগ্রহ করুন।
+</div>
+
+<h3 class="section-title">
+<span class="blue">Available</span> Files
+</h3>
+
+<div class="grid">
+
+<!-- FILE 1 -->
+<div class="card">
+
+<div class="file-icon">⚡</div>
+
+<h2>FF SENSI PRO</h2>
+
+<p>Latest Free Fire sensitivity file.</p>
+
+<div class="buttons">
+
+<a
+class="btn telegram"
+href="https://t.me/+0XtG3hTk1QNlZGZl"
+target="_blank">
+Telegram
+</a>
+
+<a
+class="btn whatsapp"
+href="https://whatsapp.com/channel/0029Vb8p5blDZ4LYWfPETv3G"
+target="_blank">
+WhatsApp
+</a>
+
+</div>
+</div>
+
+
+<!-- FILE 2 -->
+<div class="card">
+
+<div class="file-icon">🔥</div>
+
+<h2>Free Fire OBB</h2>
+
+<p>Free Fire OBB and update related files.</p>
+
+<div class="buttons">
+
+<a
+class="btn telegram"
+href="https://t.me/+0XtG3hTk1QNlZGZl"
+target="_blank">
+Telegram
+</a>
+
+<a
+class="btn whatsapp"
+href="https://whatsapp.com/channel/0029Vb8p5blDZ4LYWfPETv3G"
+target="_blank">
+WhatsApp
+</a>
+
+</div>
+</div>
+
+
+<!-- FILE 3 -->
+<div class="card">
+
+<div class="file-icon">👑</div>
+
+<h2>FF King Panel</h2>
+
+<p>FF King Panel related latest files.</p>
+
+<div class="buttons">
+
+<a
+class="btn telegram"
+href="https://t.me/+0XtG3hTk1QNlZGZl"
+target="_blank">
+Telegram
+</a>
+
+<a
+class="btn whatsapp"
+href="https://whatsapp.com/channel/0029Vb8p5blDZ4LYWfPETv3G"
+target="_blank">
+WhatsApp
+</a>
+
+</div>
+</div>
+
+
+<!-- FILE 4 -->
+<div class="card">
+
+<div class="file-icon">🚀</div>
+
+<h2>VIP Game Booster</h2>
+
+<p>Game booster and performance related file.</p>
+
+<div class="buttons">
+
+<a
+class="btn telegram"
+href="https://t.me/+0XtG3hTk1QNlZGZl"
+target="_blank">
+Telegram
+</a>
+
+<a
+class="btn whatsapp"
+href="https://whatsapp.com/channel/0029Vb8p5blDZ4LYWfPETv3G"
+target="_blank">
+WhatsApp
+</a>
+
+</div>
+</div>
+
+</div>
+
+<footer>
+© 2026 LX SHAKIL YT • Official Website
+</footer>
+
 </div>
 
 </body>
-</html>
+  </html>
